@@ -40,6 +40,22 @@ public class PhotoEntity {
         return content;
     }
 
+    public void setId(UUID id) {
+        this.id = id;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public void setLastModifyDate(Date lastModifyDate) {
+        this.lastModifyDate = lastModifyDate;
+    }
+
+    public void setContent(byte[] content) {
+        this.content = content;
+    }
+
     @Override
     public final boolean equals(Object o) {
         if (this == o) return true;

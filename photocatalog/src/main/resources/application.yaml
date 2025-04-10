@@ -1,6 +1,13 @@
 spring:
+  grpc:
+    server:
+      servlet:
+        enabled: false
   application:
     name: photocatalog
+  graphql:
+    graphiql:
+      enabled: true
   datasource:
     url: 'jdbc:postgresql://localhost:5432/photocatalog'
     username: postgres
@@ -31,6 +38,7 @@ spring:
     show-sql: false
     generate-ddl: true
     open-in-view: false
+
 server:
   port: 8282
 

@@ -23,12 +23,12 @@ public class PhotoController {
 
     @GetMapping("/all")
     public List<Photo> all() {
-        return photoService.allPhoto();
+        return photoService.allPhotos();
     }
 
     @GetMapping("/{id}")
     public Photo getCountry(@PathVariable("id") String id) {
-        return photoService.byId(id);
+        return photoService.photoById(id);
     }
 
 
